@@ -3,12 +3,14 @@ const mongoose = require('mongoose');
 const validUrl = require("valid-url");
 const bodyParser = require("body-parser");
 const path = require("path");
+const cors = require('cors');
 
 const models = require('./models');
 
 const app = express();
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, "Frontend")));
+app.use(cors());
 
 const PORT = 9000;
 const DATABASE_URL = 'mongodb://localhost:27017/savelink';

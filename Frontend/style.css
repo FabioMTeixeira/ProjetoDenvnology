@@ -1,8 +1,15 @@
-.container {
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#link-form {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 input#title,
@@ -13,11 +20,23 @@ input#link {
     width: 300px;
 }
 
-input[type="submit"] {
+button[type="submit"] {
     padding: 10px 20px;
     background-color: green;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+
+}
+
+.table {
+    display: flex;
+    width: 100%;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+td {
+    padding: 5px;
 }

@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Links Importantes</title>
+    <title>Melhores Links</title>
+
 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Salve seus links sobre tecnologia</h1>
-        <form id="add-link-form">
-            <input type="text" id="title" placeholder="Title">
-            <input type="url" id="link" placeholder="Link">
-            <input type="submit" value="Submit">
-        </form>
-    </div>
+    <h1>Adicionar Link</h1>
+    <form id="link-form">
+        <label for="title">Título:</label>
+        <input type="text" id="title" name="title"><br><br>
+        <label for="link">Link:</label>
+        <input type="text" id="link" name="link"><br><br>
+        <button type="submit">Salvar</button>
+    </form>
 
-    <div id="root"></div>
-    
-    <script type="module" src="index.js"></script>
+    <div id="table"></div>
 
+    <script src="../Frontend/src/index.js"></script>
 </body>
 </html>
