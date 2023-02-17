@@ -24,8 +24,8 @@ async function showData() {
     linkHeader.innerText = 'Link';
 
     // create table rows with data from API
-    if (Array.isArray(data)) {
-        data.forEach(item => {
+    if (Array.isArray(data.list)) {
+        data.list.forEach(item => {
             const row = tbody.insertRow();
             const titleCell = row.insertCell();
             const linkCell = row.insertCell();

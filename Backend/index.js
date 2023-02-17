@@ -9,7 +9,7 @@ const models = require('./models');
 
 const app = express();
 app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname, "Frontend")));
+app.use(express.static(path.join(__dirname, "../Frontend")));
 app.use(cors());
 
 const PORT = 9000;
@@ -30,7 +30,7 @@ const main = async () => {
 };
 
 app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "Frontend", "index.html"));
+    res.sendFile(path.join(__dirname, "../Frontend", "index.html"));
 });
 
 app.get('/links',  async (req, res) => {
@@ -51,9 +51,9 @@ app.post('/link', async (req, res) => {
         return res.status(400).send({ message: "Title and link are required" });
     }
 
-    if (!validUrl.isUri(link)) {
-        return res.status(400).send({ message: "Invalid link" });
-    }
+    // if (!validUrl.isUri(link)) {
+    //     return res.status(400).send({ message: "Invalid link" });
+    // }
 
     try {
         const newList = new models.List({ title, link });
