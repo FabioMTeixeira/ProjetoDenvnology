@@ -1,5 +1,3 @@
-# ProjetoDenvnology
-
 
 # Gerenciador de Links
 
@@ -16,6 +14,38 @@ para fazer um CRUD (create, read, update e delete) na parte do backend, onde peg
 **Banco de dados:** MongoDB
 
 
+## Instalação
+
+Para rodar o banco de dados é necessário:
+
+```bash
+  npm install express
+```
+```bash
+  npm install mongodb
+```
+```bash
+  npm install mongoose
+```
+```bash
+  npm install valid-url
+```
+```bash
+  npm install body-parse
+```
+```bash
+  npm install cors
+```
+Opcional
+```bash
+  npm install nodemon
+```
+Para rodar o servidor
+```bash
+  npx nodemon ./Backend/index.js
+```
+
+    
 ## Documentação da API
 
 #### Usado para mostrar todas as listas dos links
